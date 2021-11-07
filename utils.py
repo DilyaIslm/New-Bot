@@ -1,6 +1,6 @@
 from clarifai.rest import ClarifaiApp
 #from emoji import emojize
-from telegram import ReplyKeyboardMarkup, KeyboardButton
+from telegram import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardButton, InlineKeyboardMarkup
 
 from random import randint
 
@@ -34,7 +34,19 @@ def is_dog(file_name):
         for concept in responce ['outputs'][0]['data']['concepts']:
             if concept['name'] == 'dog':
                return True
-    return False       
+    return False    
+
+
+def dog_rating_inline_keyboard(image_name):
+    callback_text = f'rating|{image_name}|'
+    keyboard = [
+        [
+            InlineKeyboardButton('Нравится', callback_data=callback_text + '1'),
+            InlineKeyboardButton('Не нравится', callback_data=callback_text + '-1')
+        ]
+    ]
+    return InlineKeyboardMarkup(keyboard)
+
 
 if __name__ == "__main__":
     print(is_dog('images/dog2.jpg'))

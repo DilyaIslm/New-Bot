@@ -3064,3 +3064,2053 @@ pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: mydogbo
 INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
 INFO:apscheduler.scheduler:Scheduler has been shut down
 WARNING:telegram.ext.updater:Exiting immediately!
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:11:37 UTC)" (scheduled at 2021-10-28 17:11:37.546757+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:11:42 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:11:47 UTC)" (scheduled at 2021-10-28 17:11:42.546757+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:11:47 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:11:52 UTC)" (scheduled at 2021-10-28 17:11:47.546757+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:11:52 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:11:57 UTC)" (scheduled at 2021-10-28 17:11:52.546757+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:11:57 UTC)" executed successfully
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:22:03 UTC)" (scheduled at 2021-10-28 17:22:03.842373+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:22:13 UTC)" (scheduled at 2021-10-28 17:22:08.842373+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:22:18 UTC)" (scheduled at 2021-10-28 17:22:13.842373+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:22:23 UTC)" (scheduled at 2021-10-28 17:22:18.842373+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:22:40 UTC)" (scheduled at 2021-10-28 17:22:40.848869+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:22:50 UTC)" (scheduled at 2021-10-28 17:22:45.848869+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:22:55 UTC)" (scheduled at 2021-10-28 17:22:50.848869+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:23:00 UTC)" (scheduled at 2021-10-28 17:22:55.848869+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:23:05 UTC)" (scheduled at 2021-10-28 17:23:00.848869+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:23:10 UTC)" (scheduled at 2021-10-28 17:23:05.848869+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:23:15 UTC)" (scheduled at 2021-10-28 17:23:10.848869+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:24:24 UTC)" (scheduled at 2021-10-28 17:24:24.694294+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:24:34 UTC)" (scheduled at 2021-10-28 17:24:29.694294+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:24:39 UTC)" (scheduled at 2021-10-28 17:24:34.694294+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:24:44 UTC)" (scheduled at 2021-10-28 17:24:39.694294+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:24:49 UTC)" (scheduled at 2021-10-28 17:24:44.694294+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет{context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:27:49 UTC)" (scheduled at 2021-10-28 17:27:49.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:27:59 UTC)" (scheduled at 2021-10-28 17:27:54.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:04 UTC)" (scheduled at 2021-10-28 17:27:59.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:09 UTC)" (scheduled at 2021-10-28 17:28:04.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:14 UTC)" (scheduled at 2021-10-28 17:28:09.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:19 UTC)" (scheduled at 2021-10-28 17:28:14.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:24 UTC)" (scheduled at 2021-10-28 17:28:19.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:29 UTC)" (scheduled at 2021-10-28 17:28:24.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:34 UTC)" (scheduled at 2021-10-28 17:28:29.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:39 UTC)" (scheduled at 2021-10-28 17:28:34.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:44 UTC)" (scheduled at 2021-10-28 17:28:39.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:49 UTC)" (scheduled at 2021-10-28 17:28:44.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:54 UTC)" (scheduled at 2021-10-28 17:28:49.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:28:59 UTC)" (scheduled at 2021-10-28 17:28:54.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:04 UTC)" (scheduled at 2021-10-28 17:28:59.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:09 UTC)" (scheduled at 2021-10-28 17:29:04.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:14 UTC)" (scheduled at 2021-10-28 17:29:09.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:19 UTC)" (scheduled at 2021-10-28 17:29:14.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:24 UTC)" (scheduled at 2021-10-28 17:29:19.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:29 UTC)" (scheduled at 2021-10-28 17:29:24.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:34 UTC)" (scheduled at 2021-10-28 17:29:29.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:39 UTC)" (scheduled at 2021-10-28 17:29:34.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:44 UTC)" (scheduled at 2021-10-28 17:29:39.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:49 UTC)" (scheduled at 2021-10-28 17:29:44.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:54 UTC)" (scheduled at 2021-10-28 17:29:49.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:29:59 UTC)" (scheduled at 2021-10-28 17:29:54.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:04 UTC)" (scheduled at 2021-10-28 17:29:59.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:09 UTC)" (scheduled at 2021-10-28 17:30:04.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:14 UTC)" (scheduled at 2021-10-28 17:30:09.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:19 UTC)" (scheduled at 2021-10-28 17:30:14.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:24 UTC)" (scheduled at 2021-10-28 17:30:19.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:29 UTC)" (scheduled at 2021-10-28 17:30:24.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:34 UTC)" (scheduled at 2021-10-28 17:30:29.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:39 UTC)" (scheduled at 2021-10-28 17:30:34.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:44 UTC)" (scheduled at 2021-10-28 17:30:39.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:49 UTC)" (scheduled at 2021-10-28 17:30:44.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:54 UTC)" (scheduled at 2021-10-28 17:30:49.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:30:59 UTC)" (scheduled at 2021-10-28 17:30:54.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:04 UTC)" (scheduled at 2021-10-28 17:30:59.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:09 UTC)" (scheduled at 2021-10-28 17:31:04.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:14 UTC)" (scheduled at 2021-10-28 17:31:09.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:19 UTC)" (scheduled at 2021-10-28 17:31:14.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:24 UTC)" (scheduled at 2021-10-28 17:31:19.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:29 UTC)" (scheduled at 2021-10-28 17:31:24.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:34 UTC)" (scheduled at 2021-10-28 17:31:29.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:39 UTC)" (scheduled at 2021-10-28 17:31:34.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:44 UTC)" (scheduled at 2021-10-28 17:31:39.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:49 UTC)" (scheduled at 2021-10-28 17:31:44.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:54 UTC)" (scheduled at 2021-10-28 17:31:49.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:31:59 UTC)" (scheduled at 2021-10-28 17:31:54.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:04 UTC)" (scheduled at 2021-10-28 17:31:59.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:09 UTC)" (scheduled at 2021-10-28 17:32:04.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:14 UTC)" (scheduled at 2021-10-28 17:32:09.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:19 UTC)" (scheduled at 2021-10-28 17:32:14.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:24 UTC)" (scheduled at 2021-10-28 17:32:19.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:29 UTC)" (scheduled at 2021-10-28 17:32:24.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:34 UTC)" (scheduled at 2021-10-28 17:32:29.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:39 UTC)" (scheduled at 2021-10-28 17:32:34.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:44 UTC)" (scheduled at 2021-10-28 17:32:39.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:49 UTC)" (scheduled at 2021-10-28 17:32:44.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:54 UTC)" (scheduled at 2021-10-28 17:32:49.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:32:59 UTC)" (scheduled at 2021-10-28 17:32:54.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:33:04 UTC)" (scheduled at 2021-10-28 17:32:59.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:33:09 UTC)" (scheduled at 2021-10-28 17:33:04.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:33:14 UTC)" (scheduled at 2021-10-28 17:33:09.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:33:19 UTC)" (scheduled at 2021-10-28 17:33:14.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:33:24 UTC)" (scheduled at 2021-10-28 17:33:19.549518+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f"Привет {context.job.interval}!")
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:36:17 UTC)" (scheduled at 2021-10-28 17:36:17.698370+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:36:27 UTC)" (scheduled at 2021-10-28 17:36:22.698370+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:36:32 UTC)" (scheduled at 2021-10-28 17:36:27.698370+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:36:37 UTC)" (scheduled at 2021-10-28 17:36:32.698370+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:36:42 UTC)" (scheduled at 2021-10-28 17:36:37.698370+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:36:47 UTC)" (scheduled at 2021-10-28 17:36:42.698370+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:36:52 UTC)" (scheduled at 2021-10-28 17:36:47.698370+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:36:57 UTC)" (scheduled at 2021-10-28 17:36:52.698370+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:42:12 UTC)" (scheduled at 2021-10-28 17:42:12.209719+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 10, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:42:22 UTC)" (scheduled at 2021-10-28 17:42:17.209719+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 10, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:42:27 UTC)" (scheduled at 2021-10-28 17:42:22.209719+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 10, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:42:32 UTC)" (scheduled at 2021-10-28 17:42:27.209719+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 10, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:42:37 UTC)" (scheduled at 2021-10-28 17:42:32.209719+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 10, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:42:42 UTC)" (scheduled at 2021-10-28 17:42:37.209719+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 10, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:42:47 UTC)" (scheduled at 2021-10-28 17:42:42.209719+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 10, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:42:52 UTC)" (scheduled at 2021-10-28 17:42:47.209719+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 10, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:42:57 UTC)" (scheduled at 2021-10-28 17:42:52.209719+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 10, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:43:02 UTC)" (scheduled at 2021-10-28 17:42:57.209719+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 10, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:43:07 UTC)" (scheduled at 2021-10-28 17:43:02.209719+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 10, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval}!')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:46:25 UTC)" (scheduled at 2021-10-28 17:46:25.629703+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:46:35 UTC)" (scheduled at 2021-10-28 17:46:30.629703+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:46:40 UTC)" (scheduled at 2021-10-28 17:46:35.629703+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:46:45 UTC)" (scheduled at 2021-10-28 17:46:40.629703+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:46:50 UTC)" (scheduled at 2021-10-28 17:46:45.629703+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:46:55 UTC)" (scheduled at 2021-10-28 17:46:50.629703+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:47:00 UTC)" (scheduled at 2021-10-28 17:46:55.629703+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:47:05 UTC)" (scheduled at 2021-10-28 17:47:00.629703+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:47:10 UTC)" (scheduled at 2021-10-28 17:47:05.629703+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:48:40 UTC)" (scheduled at 2021-10-28 17:48:40.730246+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.self.job.interval} !')
+AttributeError: 'CallbackContext' object has no attribute 'self'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:48:50 UTC)" (scheduled at 2021-10-28 17:48:45.730246+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.self.job.interval} !')
+AttributeError: 'CallbackContext' object has no attribute 'self'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:48:55 UTC)" (scheduled at 2021-10-28 17:48:50.730246+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.self.job.interval} !')
+AttributeError: 'CallbackContext' object has no attribute 'self'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:49:00 UTC)" (scheduled at 2021-10-28 17:48:55.730246+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.self.job.interval} !')
+AttributeError: 'CallbackContext' object has no attribute 'self'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:49:05 UTC)" (scheduled at 2021-10-28 17:49:00.730246+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.self.job.interval} !')
+AttributeError: 'CallbackContext' object has no attribute 'self'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:49:10 UTC)" (scheduled at 2021-10-28 17:49:05.730246+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.self.job.interval} !')
+AttributeError: 'CallbackContext' object has no attribute 'self'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:51:15 UTC)" (scheduled at 2021-10-28 17:51:15.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:51:25 UTC)" (scheduled at 2021-10-28 17:51:20.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:51:30 UTC)" (scheduled at 2021-10-28 17:51:25.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:51:35 UTC)" (scheduled at 2021-10-28 17:51:30.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:51:40 UTC)" (scheduled at 2021-10-28 17:51:35.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:51:45 UTC)" (scheduled at 2021-10-28 17:51:40.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:51:50 UTC)" (scheduled at 2021-10-28 17:51:45.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:51:55 UTC)" (scheduled at 2021-10-28 17:51:50.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:00 UTC)" (scheduled at 2021-10-28 17:51:55.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:05 UTC)" (scheduled at 2021-10-28 17:52:00.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:10 UTC)" (scheduled at 2021-10-28 17:52:05.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:15 UTC)" (scheduled at 2021-10-28 17:52:10.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:20 UTC)" (scheduled at 2021-10-28 17:52:15.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:25 UTC)" (scheduled at 2021-10-28 17:52:20.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:30 UTC)" (scheduled at 2021-10-28 17:52:25.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:35 UTC)" (scheduled at 2021-10-28 17:52:30.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:40 UTC)" (scheduled at 2021-10-28 17:52:35.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:45 UTC)" (scheduled at 2021-10-28 17:52:40.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:50 UTC)" (scheduled at 2021-10-28 17:52:45.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:52:55 UTC)" (scheduled at 2021-10-28 17:52:50.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:53:00 UTC)" (scheduled at 2021-10-28 17:52:55.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 17:53:05 UTC)" (scheduled at 2021-10-28 17:53:00.919960+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 2, in send_hello
+    context.bot.send_message(chat_id=68383261, text=f'Привет {context.job.interval} !')
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/jobqueue.py", line 630, in __getattr__
+    return getattr(self.job, item)
+AttributeError: 'Job' object has no attribute 'interval'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:06 UTC)" (scheduled at 2021-10-28 18:27:06.406497+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:11 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:16 UTC)" (scheduled at 2021-10-28 18:27:11.406497+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:16 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:21 UTC)" (scheduled at 2021-10-28 18:27:16.406497+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:21 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:26 UTC)" (scheduled at 2021-10-28 18:27:21.406497+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:26 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:31 UTC)" (scheduled at 2021-10-28 18:27:26.406497+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:31 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:36 UTC)" (scheduled at 2021-10-28 18:27:31.406497+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:36 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:41 UTC)" (scheduled at 2021-10-28 18:27:36.406497+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:41 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:46 UTC)" (scheduled at 2021-10-28 18:27:41.406497+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:46 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:51 UTC)" (scheduled at 2021-10-28 18:27:46.406497+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:51 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:56 UTC)" (scheduled at 2021-10-28 18:27:51.406497+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:27:56 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:28:01 UTC)" (scheduled at 2021-10-28 18:27:56.406497+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:28:01 UTC)" executed successfully
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_hello" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:33:31 UTC)" (scheduled at 2021-10-28 18:33:31.770057+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:33:36 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:33:41 UTC)" (scheduled at 2021-10-28 18:33:36.770057+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:33:41 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:33:46 UTC)" (scheduled at 2021-10-28 18:33:41.770057+00:00)
+INFO:apscheduler.executors.default:Job "send_hello (trigger: interval[0:00:05], next run at: 2021-10-28 18:33:46 UTC)" executed successfully
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:14:41 UTC)" (scheduled at 2021-10-30 15:14:41.463623+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 5, in send_updates
+    now = datetime.now().strdtime('%d.%m.%Y %H:%M:%S')
+AttributeError: 'datetime.datetime' object has no attribute 'strdtime'
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:15:01 UTC)" (scheduled at 2021-10-30 15:14:51.463623+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 5, in send_updates
+    now = datetime.now().strdtime('%d.%m.%Y %H:%M:%S')
+AttributeError: 'datetime.datetime' object has no attribute 'strdtime'
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:15:11 UTC)" (scheduled at 2021-10-30 15:15:01.463623+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 5, in send_updates
+    now = datetime.now().strdtime('%d.%m.%Y %H:%M:%S')
+AttributeError: 'datetime.datetime' object has no attribute 'strdtime'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:15:22 UTC)" (scheduled at 2021-10-30 15:15:22.078545+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 5, in send_updates
+    now = datetime.now().strdtime('%d.%m.%Y %H:%M:%S')
+AttributeError: 'datetime.datetime' object has no attribute 'strdtime'
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:15:42 UTC)" (scheduled at 2021-10-30 15:15:32.078545+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 5, in send_updates
+    now = datetime.now().strdtime('%d.%m.%Y %H:%M:%S')
+AttributeError: 'datetime.datetime' object has no attribute 'strdtime'
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:15:52 UTC)" (scheduled at 2021-10-30 15:15:42.078545+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 5, in send_updates
+    now = datetime.now().strdtime('%d.%m.%Y %H:%M:%S')
+AttributeError: 'datetime.datetime' object has no attribute 'strdtime'
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:16:02 UTC)" (scheduled at 2021-10-30 15:15:52.078545+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 5, in send_updates
+    now = datetime.now().strdtime('%d.%m.%Y %H:%M:%S')
+AttributeError: 'datetime.datetime' object has no attribute 'strdtime'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:16:51 UTC)" (scheduled at 2021-10-30 15:16:51.088732+00:00)
+INFO:apscheduler.executors.default:Job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:17:01 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:17:11 UTC)" (scheduled at 2021-10-30 15:17:01.088732+00:00)
+INFO:apscheduler.executors.default:Job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:17:11 UTC)" executed successfully
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:20:35 UTC)" (scheduled at 2021-10-30 15:20:35.384433+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 7, in send_updates
+    context.bot.send_message(chat_id=user['chat_id'], text=f"Точное время {now}")
+  File "<decorator-gen-2>", line 2, in send_message
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 458, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 349, in post
+    result = self._request_wrapper(
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Chat not found
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:20:55 UTC)" (scheduled at 2021-10-30 15:20:45.384433+00:00)
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/jobs.py", line 7, in send_updates
+    context.bot.send_message(chat_id=user['chat_id'], text=f"Точное время {now}")
+  File "<decorator-gen-2>", line 2, in send_message
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 458, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 349, in post
+    result = self._request_wrapper(
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Chat not found
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:53:26 UTC)" (scheduled at 2021-10-30 15:53:26.941280+00:00)
+INFO:apscheduler.executors.default:Job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 15:53:36 UTC)" executed successfully
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 16:47:43 UTC)" (scheduled at 2021-10-30 16:47:43.411361+00:00)
+INFO:apscheduler.executors.default:Job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 16:47:53 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 16:48:03 UTC)" (scheduled at 2021-10-30 16:47:53.411361+00:00)
+INFO:apscheduler.executors.default:Job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-30 16:48:03 UTC)" executed successfully
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 86, in set_alarm
+    alarm_seconds = abs(int(comtext.args[0]))
+NameError: name 'comtext' is not defined
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:52:40 UTC)" (scheduled at 2021-10-31 14:52:40.704722+00:00)
+INFO:apscheduler.executors.default:Job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:52:50 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:53:00 UTC)" (scheduled at 2021-10-31 14:52:50.704722+00:00)
+INFO:apscheduler.executors.default:Job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:53:00 UTC)" executed successfully
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 86, in set_alarm
+    alarm_seconds = abs(int(comtext.args[0]))
+NameError: name 'comtext' is not defined
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:53:10 UTC)" (scheduled at 2021-10-31 14:53:00.704722+00:00)
+INFO:apscheduler.executors.default:Job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:53:10 UTC)" executed successfully
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 86, in set_alarm
+    alarm_seconds = abs(int(context.args[0]))
+IndexError: list index out of range
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:54:02 UTC)" (scheduled at 2021-10-31 14:54:02.737691+00:00)
+INFO:apscheduler.executors.default:Job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:54:12 UTC)" executed successfully
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:54:22 UTC)" (scheduled at 2021-10-31 14:54:12.737691+00:00)
+INFO:apscheduler.executors.default:Job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:54:22 UTC)" executed successfully
+INFO:apscheduler.scheduler:Added job "alarm" to job store "default"
+INFO:apscheduler.executors.default:Running job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:54:32 UTC)" (scheduled at 2021-10-31 14:54:22.737691+00:00)
+INFO:apscheduler.executors.default:Job "send_updates (trigger: interval[0:00:10], next run at: 2021-10-31 14:54:32 UTC)" executed successfully
+INFO:apscheduler.scheduler:Removed job e187e7968e23492589ecb6deac684f76
+INFO:apscheduler.executors.default:Running job "alarm (trigger: date[2021-10-31 14:54:25 UTC], next run at: 2021-10-31 14:54:25 UTC)" (scheduled at 2021-10-31 14:54:25.255854+00:00)
+INFO:apscheduler.executors.default:Job "alarm (trigger: date[2021-10-31 14:54:25 UTC], next run at: 2021-10-31 14:54:25 UTC)" executed successfully
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 44, in send_dog_picture
+    context.bot.send_photo(
+  File "<decorator-gen-5>", line 2, in send_photo
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 631, in send_photo
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 347, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 44, in send_dog_picture
+    context.bot.send_photo(
+  File "<decorator-gen-5>", line 2, in send_photo
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 631, in send_photo
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 347, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 44, in send_dog_picture
+    context.bot.send_photo(
+  File "<decorator-gen-5>", line 2, in send_photo
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 631, in send_photo
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 347, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 102, in dog_picture_rating
+    save_dog_image_vote(db, user, image_name, vote)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/db.py", line 69, in save_dog_image_vote
+    db.images,update_one(
+NameError: name 'update_one' is not defined
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 102, in dog_picture_rating
+    save_dog_image_vote(db, user, image_name, vote)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/db.py", line 69, in save_dog_image_vote
+    db.images,update_one(
+NameError: name 'update_one' is not defined
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 102, in dog_picture_rating
+    save_dog_image_vote(db, user, image_name, vote)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/db.py", line 69, in save_dog_image_vote
+    db.images,update_one(
+NameError: name 'update_one' is not defined
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 102, in dog_picture_rating
+    save_dog_image_vote(db, user, image_name, vote)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/db.py", line 69, in save_dog_image_vote
+    db.images,update_one(
+NameError: name 'update_one' is not defined
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 50, in send_dog_picture
+    context.bot.send_photo(
+  File "<decorator-gen-5>", line 2, in send_photo
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 631, in send_photo
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 347, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 50, in send_dog_picture
+    context.bot.send_photo(
+  File "<decorator-gen-5>", line 2, in send_photo
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 631, in send_photo
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 347, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 50, in send_dog_picture
+    context.bot.send_photo(
+  File "<decorator-gen-5>", line 2, in send_photo
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 631, in send_photo
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 347, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 50, in send_dog_picture
+    context.bot.send_photo(
+  File "<decorator-gen-5>", line 2, in send_photo
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 631, in send_photo
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 347, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 50, in send_dog_picture
+    context.bot.send_photo(
+  File "<decorator-gen-5>", line 2, in send_photo
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 631, in send_photo
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 347, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Added job "send_updates" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 52, in send_dog_picture
+    context.bot.send_photo(
+  File "<decorator-gen-5>", line 2, in send_photo
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 631, in send_photo
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 347, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/dispatcher.py", line 432, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/ext/handler.py", line 156, in handle_update
+    return self.callback(update, context)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/handlers.py", line 52, in send_dog_picture
+    context.bot.send_photo(
+  File "<decorator-gen-5>", line 2, in send_photo
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 631, in send_photo
+    return self._message(  # type: ignore[return-value]
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 281, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 347, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/Users/dilaraislamova/projects/mydogbot/mybot/env/lib/python3.9/site-packages/telegram/utils/request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!

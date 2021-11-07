@@ -1,8 +1,10 @@
 from glob import glob
 import os
 from random import choice
-from db import db, get_or_create_user
-from utils import is_dog, play_random_numbers, main_keyboard
+from db import (db, get_or_create_user, subscribe_user, unsubscribe_user, save_dog_image_vote,
+                user_voted, get_image_rating)
+from jobs import alarm
+from utils import is_dog, play_random_numbers, main_keyboard, dog_rating_inline_keyboard
 #import connect
 
 def greet_user(update, context):
@@ -40,7 +42,19 @@ def send_dog_picture(update, context):
     dog_photo_list = glob("images/dog*.jp*g")
     dog_photo_filename = choice(dog_photo_list)
     chat_id = update.effective_chat.id
-    context.bot.send_photo(chat_id=chat_id,photo=open(dog_photo_filename, "rb"), reply_markup=main_keyboard())
+    if user_voted(db, dog_photo_filename, user['user_id']):
+        rating = get_image_rating(db, dog_photo_filename)
+        keyboard = None
+        caption = f"Рейтинг картинки {rating}"
+    else:
+        keyboard = dog_rating_inline_keyboard(dog_photo_filename) 
+        caption = None   
+    context.bot.send_photo(
+        chat_id=chat_id,
+        photo=open(dog_photo_filename, "rb"),
+        reply_markup=keyboard,
+        caption=caption
+    )
 
 def user_coordinates(update, context):
     user = get_or_create_user(db, update.effective_user, update.message.chat.id)
@@ -65,4 +79,36 @@ def check_user_photo(update, context):
         os.rename(file_name, new_filename)
     else:
         update.message.reply_text("Проблемка, собачки нет")
-        os.remove(file_name)    
+        os.remove(file_name)
+
+
+def subscribe(update, context):
+    user = get_or_create_user(db, update.effective_user, update.message.chat.id)
+    subscribe_user(db, user)
+    update.message.reply_text('Вы успешно подписались')
+
+
+def unsubscribe(update, context):
+    user = get_or_create_user(db, update.effective_user, update.message.chat.id)
+    unsubscribe_user(db, user)
+    update.message.reply_text('Вы отписались')
+
+
+def set_alarm(update, context):
+    try:
+        alarm_seconds = abs(int(context.args[0]))
+        context.job_queue.run_once(alarm, alarm_seconds, context=update.message.chat.id)
+        update.message.reply_text(f"Уведомление через {alarm_seconds} секунд") 
+    except (ValueError, TypeError):
+        update.message.reply_text("Введите целое число секунд после команды")    
+
+
+def dog_picture_rating(update, context):
+    update.callback_query.answer()
+    callback_type, image_name, vote = update.callback_query.data.split("|")
+    vote = int(vote)
+    user = get_or_create_user(db, update.effective_user, update.effective_chat.id)
+    save_dog_image_vote(db, user, image_name, vote)
+    rating = get_image_rating(db, image_name)
+    update.callback_query.edit_message_caption(caption=f"Рейтинг картинки {rating}")
+

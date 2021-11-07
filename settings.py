@@ -4,6 +4,7 @@ PROXY_USERNAME = "learn"
 PROXY_PASSWORD = "python"
 USER_EMOJI = [":sparkling_heart:", ":cookie:", ":dog:", ":cupid:", ":heart_eyes:"]
 CLARIFAI_API_KEY = '15f98f837fbc438c8b6ff6bd6869d0ee'
+
 #MONGO_LINK = "mongodb+srv://Dilya:cAd1Qx1xb9hn5qH1@cluster0.fm2qa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", ssl=True,ssl_cert_reqs='CERT_NONE'
 #MONGO_DB = "mydogbot"
 

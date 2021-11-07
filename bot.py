@@ -1,8 +1,20 @@
 import logging
-from handlers import greet_user, guess_number, send_dog_picture, talk_to_me, user_coordinates, check_user_photo
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler
+import pytz
+
+from datetime import time
+from telegram.ext.jobqueue import Days
+
+from handlers import (greet_user, guess_number, send_dog_picture, talk_to_me, 
+                      user_coordinates, check_user_photo, subscribe, 
+                      unsubscribe, set_alarm, dog_picture_rating)
+from telegram.ext import (Updater, CommandHandler, MessageHandler, 
+                          Filters, ConversationHandler, CallbackQueryHandler)
+from telegram.bot import Bot
+from telegram.ext import messagequeue as mq
+from telegram.utils.request import Request
 from anketa import (anketa_comment, anketa_name, anketa_start, anketa_skip,
                     anketa_dontknow, anketa_rating)
+from jobs import send_updates                    
 import settings
 
 logging.basicConfig(filename="bot.log", level=logging.INFO)
@@ -10,11 +22,39 @@ logging.basicConfig(filename="bot.log", level=logging.INFO)
 PROXY = {'proxy_url': settings.PROXY_URL,
     'urllib3_proxy_kwargs': {'username': settings.PROXY_USERNAME, 'password': settings.PROXY_PASSWORD}}
 
-    
+class MQBot(Bot):
+    def __init__(self, *args, is_queued_def=True, msg_queue=None, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._is_messages_queued_default = is_queued_def
+        self._msg_queue = msg_queue or mq.MessageQueue()
+
+    def __del__(self):
+        try:
+            self._msg_queue.stop()
+        except:
+            pass
+
+    @mq.queuedmessage
+    def send_message(self, *args, **kwargs):
+        return super().send_message(*args, **kwargs) 
+
+
 def main():
-    mybot = Updater(settings.API_KEY, use_context=True, request_kwargs=PROXY)
+    request = Request(
+        con_pool_size=8,
+        proxy_url=PROXY['proxy_url'],
+        urllib3_proxy_kwargs=PROXY['urllib3_proxy_kwargs']
+    )
+    bot = MQBot(settings.API_KEY, request=request)
+    mybot = Updater(bot=bot, use_context=True)
+
+    jq = mybot.job_queue
+    target_time = time(12, 0, tzinfo=pytz.timezone('Europe/Moscow'))
+    target_days = (Days.MON, Days.WED, Days.FRI)
+    jq.run_daily(send_updates, target_time, target_days)
 
     dp = mybot.dispatcher
+
 
     anketa = ConversationHandler(
         entry_points=[
@@ -34,6 +74,10 @@ def main():
     dp.add_handler(CommandHandler("start", greet_user))
     dp.add_handler(CommandHandler("guess", guess_number))
     dp.add_handler(CommandHandler("dog", send_dog_picture))
+    dp.add_handler(CommandHandler('subscribe', subscribe))
+    dp.add_handler(CommandHandler('unsubscribe', unsubscribe))
+    dp.add_handler(CommandHandler('alarm', set_alarm))
+    dp.add_handler(CallbackQueryHandler(dog_picture_rating, pattern="^(rating|)"))
     dp.add_handler(MessageHandler(Filters.regex('^(Прислать собачку)$'), send_dog_picture))
     dp.add_handler(MessageHandler(Filters.photo, check_user_photo))
     dp.add_handler(MessageHandler(Filters.location, user_coordinates))
